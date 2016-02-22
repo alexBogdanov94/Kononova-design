@@ -1,2 +1,0 @@
-# Kononova-design
-First project

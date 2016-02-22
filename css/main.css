@@ -1,0 +1,317 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+ 
+}
+body {
+    background-color: #414335;
+}
+
+.logo-holder {
+    margin-left: auto;
+    margin-right: auto;
+   width: 60%;
+    padding: 17px 10px;
+    
+}
+ 
+.logo-holder img {
+  
+    width: 100%;
+   
+
+}
+.logo-holder img:hover {
+ 
+animation: rotation 1s 1;
+}
+@keyframes rotation { 
+    0% {transform: rotateZ(1deg);}
+    10% {transform: rotateZ(-2deg);}
+    30% {transform: rotateZ(2deg);}
+    50% {transform: rotateZ(-21deg);}
+    60% {transform: rotateZ(11deg);}
+    70% {transform: rotateZ(-7deg);}
+    80% {transform: rotateZ(9deg);}
+    90% {transform: rotateZ(-3deg);}
+    100% {transform: rotateZ(2deg);}
+}
+
+.caption h2 {
+    position: absolute;
+    z-index: -1;
+    bottom: 70px;
+    width: 100%;
+    
+    clear: both;
+    margin-top: 90px;
+    color: #11110b;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffe, 0 0 70px #fff, 0 0 80px #fff, 0 0 100px #fff, 0 0 150px #fff;
+    animation: bounce 1s ease-in;
+
+    
+}
+
+@keyframes bounce { 
+    0% {opacity: 0;}
+    5% {top: 0%;}
+    10% {font-size: 5px;}
+
+}
+
+/*button menu styles*/
+.toggle {
+    width: 30px;
+    border: 2px solid #ffffff;
+    
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5em;
+    z-index: 4;
+    position: absolute;
+    right: 16px;
+    top: 19%
+        
+     
+    
+  
+}
+.toggle:hover {
+    color: #c00;
+      cursor: pointer; 
+}
+/*menu styles*/
+
+nav ul li:hover > ul a:hover {
+		color: #00c;
+        text-shadow: 2px 2px 2px #666666;
+	}
+nav ul { 
+	list-style: none;
+	position: relative;
+	display: inline;
+}
+	
+
+	nav ul li:hover {
+	text-shadow: 5px 5px 10px #929291;
+    color: #666666;
+	}
+		nav ul li:hover a {
+			color: #666666;
+            text-shadow:  2px 2px 10px #fff;
+		}
+	
+	nav ul li a {
+        
+		display: block;
+		text-decoration: none;
+        text-align: center;
+        padding: 2px 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 4px 6px #202020;
+    text-transform: uppercase;
+    transition: color linear 1s;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 21px;
+    color: #f7f7f7;
+	}
+
+	
+nav .active {
+    color: #A2D1F9;
+    text-shadow: 4px 2px 15px #303030;
+  
+}
+	
+	
+
+nav  li:last-child a{
+  
+    font-size: 16px;
+    font-family:monospace;
+ 
+    
+} 
+
+/*style for hovered*/
+
+nav ul ul {
+	display: none;
+}
+
+	nav ul li:hover > ul {
+		display: block;
+    
+	}
+
+nav ul li:hover > ul a {
+		color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-left: 0;
+	}
+/*end menu styles*/
+ .swiper {
+   
+    color: #ebe8e3;
+    font-size: 36px;
+    text-decoration: none;
+    font-family: "Times New Roman", sans-serif;    
+    
+}
+.swiper:hover {
+    opacity: 0.7;
+   cursor: pointer;
+
+}
+.left-arrow {
+ position: absolute;
+    bottom: 14px;
+    left: 12px;
+}
+.right-arrow {
+   position: absolute;
+    bottom: 14px;
+    right: 12px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    
+    width: 100%;
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    position: relative;
+    
+    margin-bottom: 5px;
+}
+.icons a {
+   
+	display: inline-block;
+	
+	
+	width: 56px;
+	height: 50px;
+    
+     -webkit-transition: background 0.2s;
+          transition: background 0.2s;
+          
+	
+
+	
+}
+.facebook {
+    background-image: url(../Images/icons.png);
+    background-position: 20px -40px;
+    background-repeat: no-repeat;
+}
+.instagram {
+    background-image: url(../Images/icons.png);
+    background-position: -77px -40px;
+    background-repeat: no-repeat;
+}
+.vk {
+    background-image: url(../Images/icons.png);
+    background-position: -172px -40px;
+    background-repeat: no-repeat;
+}
+.facebook:hover {
+    background-image: url(../Images/icons.png);
+    background-position: 20px 9px;
+    background-repeat: no-repeat;
+
+}
+.instagram:hover {
+    background-image: url(../Images/icons.png);
+    background-position: -77px 13px;
+    background-repeat: no-repeat;
+}
+.vk:hover {
+    background-image: url(../Images/icons.png);
+    background-position: -172px 13px;
+    background-repeat: no-repeat;
+}
+/*for small screems*/
+@media only screen and (min-width : 620px) {
+.logo-holder {
+    width: 50%;
+    }
+   
+
+    .caption h2 {
+        font-size: 28px;
+        bottom: 26%;
+    }
+
+}
+/*for larger screens*/
+@media screen and (min-width: 860px) {
+  
+  
+    nav {
+        position: absolute;
+        float: right;
+        width: 100%;
+    }
+    nav ul li a {
+        font-size: 28px;
+      
+    }
+  
+    .logo-holder {
+        width: 19%;
+        float: left;
+    }
+    .caption h2 {
+       top: 35%;
+    }
+    nav ul li:last-child {
+        
+        width: 60px;
+    }
+    nav ul li:last-child a {
+        padding-top: 13px;
+    }
+nav ul li {
+    
+    margin-left: 5%;
+    margin-top: 1%;
+	float: left;
+}
+    nav ul li:first-child {
+      margin-left: 45%;
+    } 
+
+.toggle {
+    display: none;
+}
+.icons {
+    width: 20%;
+    }
+}
+@media screen and (max-width: 1311px) {
+    nav ul li:first-child {
+       margin-left: 25%;
+    } 
+}
+@media screen and (max-width: 860px) {
+nav {
+ display: none;
+}
+ nav ul li:first-child {
+       margin-left: 0%;
+    } 
+}
